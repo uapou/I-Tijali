@@ -1,0 +1,149 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("tennis.jpg");
+    
+  }
+  
+ .calendar {
+  margin: 10px;
+  padding: 5px; /* Adjust the padding to make the calendar slightly smaller */
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 45%; /* Adjust the width to make the calendar slightly smaller */
+  float: left;
+}
+
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #efb4b4;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  th:first-child, td:first-child {
+    text-align: left;
+  }
+  
+  th, td {
+    font-size: 14px;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+.disponible-button {
+  background-color: #c0c9c0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: fit-content;
+} 
+
+.disponible-button:hover{
+  background-color: rgb(54, 184, 63);
+}
+
+.reserved-button {
+  background-color: rgb(255, 140, 0);
+  color: white;
+}
+
+.return-button {
+  position: fixed;
+  top: 33px;
+  left: 50%; /* Horizontally align to the center */
+  transform: translateX(-50%); /* Adjust to center the button horizontally */
+  background-color:  rgba(39, 39, 39, 0.612);
+  border: 1px solid #ffffff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #ffffff;
+
+}
+
+.return-button:hover{
+  background-color: rgb(51, 55, 70);
+  color: #ccc;
+}
+
+.login-button{
+  position: fixed;
+  top: 70px;
+  left: 50%; /* Horizontally align to the center */
+  transform: translateX(-50%); /* Adjust to center the button horizontally */
+  background-color:  rgba(39, 39, 39, 0.612);
+  border: 1px solid #ffffff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.login-button:hover{
+  background-color: rgb(51, 55, 70);
+  color: #ccc;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust the alpha value for opacity */
+  pointer-events: none; /* Allows clicks to pass through to the content beneath */
+  z-index: -1;
+  }    
+
+.reserved-button-green {
+  background-color: green; /* Change to the desired green color */
+  color: white; /* Adjust the font color for better contrast */
+}
+
+.clear{
+  position: fixed;
+  top: 40%;
+  left: 50%; /* Horizontally align to the center */
+  transform: translateX(-50%); /* Adjust to center the button horizontally */
+  background-color:  rgba(39, 39, 39, 0.612);
+  border: 1px solid #ffffff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #ffffff;
+  width: 77px;
+
+}
+
+.clear:hover{
+  background-color: rgb(51, 55, 70);
+  color: #ccc;
+
+}

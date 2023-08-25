@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Club de Tennis I Tijali  --- Login</title>
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url("tennis.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+  
+    form {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .form-field {
+      margin-bottom: 15px;
+    }
+  
+    input[type="email"],
+    input[type="password"] {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  
+    .btn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+ 
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .main{
+      position: fixed;
+      color: #ffffff;
+      top: 50px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .min{
+      position: fixed;
+      color: #ffffff;
+      top: 100px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-style: italic;
+    }
+
+    .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the alpha value for opacity */
+    pointer-events: none; /* Allows clicks to pass through to the content beneath */
+    z-index: -1;
+    }    
+  </style>
+
+</head>
+<body>
+<div class="overlay"></div>
+<h1 class="main">Club de Tennis I Tijali</h1>
+<h3 class="min">Log in</h3>
+
+<form id="loginForm" onsubmit="return validateForm()">
+  <div class="form-field">
+    <input id="emailInput" type="number" placeholder="Part n°" required>
+  </div>
+  <div class="form-field">
+    <input id="passwordInput" type="password" placeholder="Mot de passe" required>
+  </div>
+  <div class="form-field">
+    <button class="btn" type="submit">Log in</button>
+  </div>
+</form>
+
+<script src="index.js"></script>
+
+</body>
+</html>
