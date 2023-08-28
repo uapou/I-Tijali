@@ -11,14 +11,14 @@ body {
 }
 
 .calendar {
-margin: 10px;
-padding: 5px; /* Adjust the padding to make the calendar slightly smaller */
-background-color: rgb(255, 255, 255);
-border: 1px solid #ccc;
-border-radius: 5px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-width: 43%; /* Adjust the width to make the calendar slightly smaller */
-float: left;
+  margin: 10px; /* Adjust or remove the margin to move the calendar to the edge */
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 44%;
+  float: right;
 }
 
 
@@ -33,6 +33,7 @@ table {
 
 table, th, td {
   border: 1px solid #efb4b4;
+  overflow-y: auto;
 }
 
 th, td {
@@ -57,8 +58,8 @@ tbody tr:nth-child(even) {
 }
 
 .disponible-button {
-background-color: #c0c9c0;
-color: white;
+background-color: #ffffff;
+color:#ffffff;
 border: none;
 cursor: pointer;
 transition: background-color 0.3s;
@@ -67,6 +68,7 @@ width: fit-content;
 
 .disponible-button:hover{
 background-color: rgb(54, 184, 63);
+color: rgb(54, 184, 63);
 }
 
 .reserved-button {
